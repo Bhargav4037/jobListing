@@ -35,7 +35,7 @@ Run the Html code by right clicking it and open it live server.
 
 ## External Libraries
 
-PapaParse: A JavaScript library to parse CSV files
+### PapaParse: A JavaScript library to parse CSV files
 Usage: Parsing job listings from a CSV file.
 CDN: https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js
 
