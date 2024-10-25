@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Library for parsing the CSV file is below-->  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script> 
+</head>
+<body>
+    <header>
+        <h1>Your Path to Success: Find and Apply for Jobs Easily</h1>
+        <div id="filterDiv">
+            <div id="filters">
+                <!--Filter by job type-->
+                <label for="jobType">Filter by Job Type:</label>
+                <select id="jobType">
+                    <option value="all">All</option>
+                    <option value="Full-Time">Full-Time</option>
+                    <option value="Part-Time">Part-Time</option>
+                    <option value="Intern">Intern</option>
+                    <option value="Contract">Contract</option>
+                    <option value="Temporary">Temporary</option>
+                </select>
+            </div>
+            <div id="filters">
+                <!--Filter by job sorting-->
+                <label for="jobSort">Filter by Sort:</label>
+                <select id="jobSort">
+                    <option value="all"></option>
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                </select>
+            </div>
+        </div>
+        <div id="searches">
+            <!-- Search by job title -->
+            <label for="jobSearch" style="display: flex; justify-content: center; align-items:center"></label>
+            <input type="text" id="jobSearch" placeholder="Search by Job Title..">
+        </div>
+
+    </header>
+
+    <section id="job-Listings"></section>
+
+    <script src="script.js"></script>
+</body>
+</html>
